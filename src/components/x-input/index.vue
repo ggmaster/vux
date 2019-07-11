@@ -372,7 +372,7 @@ export default {
     onBlur ($event) {
       this.setTouched()
       this.validate()
-      this.isFocus = false
+      // this.isFocus = false
       this.$emit('on-blur', this.currentValue, $event)
     },
     onKeyUp (e) {
