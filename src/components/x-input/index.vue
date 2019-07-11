@@ -378,6 +378,7 @@ export default {
     onKeyUp (e) {
       if (e.key === 'Enter') {
         e.target.blur()
+        this.isFocus = true
         this.$emit('on-enter', this.currentValue, e)
       }
     },
